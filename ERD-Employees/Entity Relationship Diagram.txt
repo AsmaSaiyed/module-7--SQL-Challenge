@@ -1,0 +1,41 @@
+DEPARTMENTS
+-
+dept_no pk 
+dept_name
+
+
+
+DEPT_EMP
+-
+Emp_No INTEGER PK 
+Dept_No INTEGER FK >-< Departments.Dept_No
+
+
+DEPT_MANAGER
+-
+Emp_No INTEGER PK FK >-< Employees.Emp_No
+Dept_No INTEGER FK >-< Departments.Dept_No
+
+EMPLOYEES
+--
+Emp_No INTEGER PK FK >-< Dept_Emp.Emp_No
+emp_title_id 
+birth_date
+first_name
+last_name
+sex
+hire_date
+
+
+SALARIES
+--
+Emp_No INTEGER PK FK >-< Employees.Emp_No
+salary
+
+TITLES
+-
+Title_ID INTEGER PK FK >-< Employees.Emp_Title_ID
+title
+
+
+

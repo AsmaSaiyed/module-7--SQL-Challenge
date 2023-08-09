@@ -1,0 +1,6 @@
+CREATE TABLE titles(
+emp_title_id VARCHAR (10)NOT NULL PRIMARY KEY,
+title VARCHAR (30) NOT NULL
+);
+
+SELECT * FROM titles;
